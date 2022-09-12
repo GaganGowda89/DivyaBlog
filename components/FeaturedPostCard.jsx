@@ -13,13 +13,13 @@ const FeaturedPostCard = ({ post }) => (
       <div className="flex items-center absolute bottom-5 w-full justify-center">
         <Image
           unoptimized
-          alt={post.author.name}
+          alt={post.author[0].name}
           height="30px"
           width="30px"
           className="align-middle drop-shadow-lg rounded-full"
-          src={post.author.photo.url}
+          src={post.author[0].photo.url}
         />
-        <p className="inline align-middle text-white text-shadow ml-2 font-medium">{post.author.name}</p>
+        <p className="inline align-middle text-white text-shadow ml-2 font-medium">{post.author[0].name}</p>
       </div>
     </div>
     <Link href={`/post/${post.slug}`}><span className="cursor-pointer absolute w-full h-full" /></Link>
