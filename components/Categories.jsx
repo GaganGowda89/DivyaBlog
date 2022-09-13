@@ -27,7 +27,6 @@ const Categories = () => {
       <p className="text-ls pb-4 mb-8">  @ Instagram  📸 : <a className="underline text-blue-600 hover:text-blue-900 visited:text-purple-600" href="https://www.instagram.com/divgan2702/"> Divgan2702 </a></p>
     </div>
 
-
   );
 };
 
